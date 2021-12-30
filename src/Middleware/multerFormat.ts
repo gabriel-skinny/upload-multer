@@ -15,7 +15,7 @@ export const multerFormat = (req: Request, res: Response, next: NextFunction) =>
             }
 
             cb(null, file);
-        }
+        },
     });
     
     const upload = multerconfig.single("img");
