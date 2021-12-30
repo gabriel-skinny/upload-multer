@@ -6,6 +6,6 @@ import formidable from "express-formidable";
 
 const routes = Router();
 
-routes.post("/upload", formidable(), fileFormat, multerFormat,new uploadController().handle);
+routes.post("/upload", fileFormat, multerFormat,new uploadController().handle);
 
 export { routes };
